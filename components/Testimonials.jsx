@@ -35,7 +35,7 @@ function Testimonials() {
               <FaUserCircle size={60} className="text-blue-500" />
             </div>
             <h3 className="text-xl font-bold text-center mb-2">{testimonial.name}</h3>
-            <p className="text-gray-600 text-center mb-4 italic">"{testimonial.feedback}"</p>
+            <p className="text-gray-600 text-center mb-4 italic">&quot;{testimonial.feedback}&quot;</p>
             <p className="text-gray-400 text-center text-sm">{testimonial.date}</p>
           </div>
         ))}
