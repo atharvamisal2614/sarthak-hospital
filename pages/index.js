@@ -5,8 +5,8 @@ import Hero from "@/components/Hero";
 import Welcome from "@/components/Welcome";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
-import NewsAndUpdates from "@/components/NewsandUpdate";
 import BookAppointmentForm from "@/components/BookAppointmentForm";
+import NewsAndUpdate from "@/components/NewsAndUpdate";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,7 +27,7 @@ export default function Home() {
    <Welcome />
    <Services />
    <Testimonials />
-   <NewsAndUpdates />
+   <NewsAndUpdate />
    <BookAppointmentForm />
     </>
   );
