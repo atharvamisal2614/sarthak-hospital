@@ -2,7 +2,7 @@ import React from 'react';
 import { FaCalendarAlt, FaChevronRight } from 'react-icons/fa';
 import Image from 'next/image';
 
-const NewsAndUpdates = () => {
+const NewsAndUpdate = () => {
   const newsItems = [
     {
       id: 1,
@@ -81,4 +81,4 @@ const NewsAndUpdates = () => {
   );
 };
 
-export default NewsAndUpdates;
+export default NewsAndUpdate;
