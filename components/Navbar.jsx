@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
 
           {/* Center - Links (desktop) */}
-          <div className="hidden md:flex items-center space-x-10 mx-10">
+          <div className="hidden md:flex items-center space-x-7 mx-10">
             <Link href="/dashboard" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Home</Link>
             <Link href="/patients" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">About</Link>
             <Link href="/doctors" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Services</Link>
