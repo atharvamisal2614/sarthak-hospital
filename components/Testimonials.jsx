@@ -26,13 +26,13 @@ function Testimonials() {
 
   return (
     <div className=" py-12 px-6">
-      <h1 className="text-center text-3xl font-bold text-blue-500 mb-8 underline">Patient Testimonials</h1>
+      <h1 className="text-center text-3xl font-bold text-customBlue mb-8">Patient Testimonials</h1>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
             <div className="flex items-center justify-center mb-4">
-              <FaUserCircle size={60} className="text-blue-500" />
+              <FaUserCircle size={60} className="text-customBlue" />
             </div>
             <h3 className="text-xl font-bold text-center mb-2">{testimonial.name}</h3>
             <p className="text-gray-600 text-center mb-4 italic">&quot;{testimonial.feedback}&quot;</p>
@@ -45,3 +45,10 @@ function Testimonials() {
 }
 
 export default Testimonials;
+
+
+
+
+
+
+

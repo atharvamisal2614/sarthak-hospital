@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and About */}
           <div className="col-span-1">
-            <Image src="/hospital-logo.jpg" alt="Hospital Logo" width={150} height={50} />
+            <Image src="/hospital-logo-og.png" alt="Hospital Logo" width={150} height={50} />
             <p className="mt-4 text-gray-400">
               Our hospital is committed to providing world-class healthcare services with a compassionate touch.
             </p>

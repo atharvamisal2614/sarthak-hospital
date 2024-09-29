@@ -39,7 +39,7 @@ const BookAppointmentForm = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left side: Heading and Description */}
           <div className="flex flex-col justify-start text-justify">
-            <h2 className="text-3xl font-semibold text-blue-500 mb-4 underline">Book an Appointment</h2>
+            <h2 className="text-3xl font-semibold text-customBlue mb-4">Book an Appointment</h2>
             <p className="text-lg text-gray-700 mb-6">
               Schedule your appointment with one of our experienced doctors. Fill out the form to select the department, choose a convenient time, and let us know if you have any specific concerns. We’ll confirm your booking shortly.
             </p>
@@ -161,7 +161,7 @@ const BookAppointmentForm = () => {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300"
+                  className="bg-customBlue text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300"
                 >
                   Book Appointment
                 </button>

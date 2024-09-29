@@ -30,16 +30,16 @@
 
 //           {/* Center - Links (desktop) */}
 //           <div className="hidden md:flex items-center space-x-7 mx-10">
-//             <Link href="/dashboard" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Home</Link>
-//             <Link href="/patients" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">About</Link>
-//             <Link href="/doctors" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Services</Link>
-//             <Link href="/appointments" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Doctors</Link>
-//             <Link href="/billing" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Emergency Services</Link>
-//             <Link href="/staff" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">News & Events</Link>
-//             <Link href="/reports" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Careers</Link>
-//             <Link href="/inventory" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Contact Us</Link>
-//             <Link href="/pharmacy" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Blog</Link>
-//             <Link href="/settings" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Legal Notice</Link>
+//             <Link href="/dashboard" className="text-gray-700 hover:text-customBlue hover:underline font-bold text-lg">Home</Link>
+//             <Link href="/patients" className="text-gray-700 hover:text-customBlue hover:underline font-bold text-lg">About</Link>
+//             <Link href="/doctors" className="text-gray-700 hover:text-customBlue hover:underline font-bold text-lg">Services</Link>
+//             <Link href="/appointments" className="text-gray-700 hover:text-customBlue hover:underline font-bold text-lg">Doctors</Link>
+//             <Link href="/billing" className="text-gray-700 hover:text-customBlue hover:underline font-bold text-lg">Emergency Services</Link>
+//             <Link href="/staff" className="text-gray-700 hover:text-customBlue hover:underline font-bold text-lg">News & Events</Link>
+//             <Link href="/reports" className="text-gray-700 hover:text-customBlue hover:underline font-bold text-lg">Careers</Link>
+//             <Link href="/inventory" className="text-gray-700 hover:text-customBlue hover:underline font-bold text-lg">Contact Us</Link>
+//             <Link href="/pharmacy" className="text-gray-700 hover:text-customBlue hover:underline font-bold text-lg">Blog</Link>
+//             <Link href="/settings" className="text-gray-700 hover:text-customBlue hover:underline font-bold text-lg">Legal Notice</Link>
 //           </div>
 
 //           {/* Emergency Contact Button (Desktop View) */}
@@ -112,16 +112,16 @@
 //           </button>
 
 //           {/* Menu items */}
-//           <Link href="/dashboard" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Home</Link>
-//           <Link href="/patients" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">About</Link>
-//           <Link href="/doctors" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Services</Link>
-//           <Link href="/appointments" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Doctors</Link>
-//           <Link href="/billing" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Emergency Services</Link>
-//           <Link href="/staff" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">News & Events</Link>
-//           <Link href="/reports" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Careers</Link>
-//           <Link href="/inventory" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Contact Us</Link>
-//           <Link href="/pharmacy" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Blog</Link>
-//           <Link href="/settings" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Legal Notice</Link>
+//           <Link href="/dashboard" className="text-gray-700 hover:text-customBlue hover:underline text-2xl">Home</Link>
+//           <Link href="/patients" className="text-gray-700 hover:text-customBlue hover:underline text-2xl">About</Link>
+//           <Link href="/doctors" className="text-gray-700 hover:text-customBlue hover:underline text-2xl">Services</Link>
+//           <Link href="/appointments" className="text-gray-700 hover:text-customBlue hover:underline text-2xl">Doctors</Link>
+//           <Link href="/billing" className="text-gray-700 hover:text-customBlue hover:underline text-2xl">Emergency Services</Link>
+//           <Link href="/staff" className="text-gray-700 hover:text-customBlue hover:underline text-2xl">News & Events</Link>
+//           <Link href="/reports" className="text-gray-700 hover:text-customBlue hover:underline text-2xl">Careers</Link>
+//           <Link href="/inventory" className="text-gray-700 hover:text-customBlue hover:underline text-2xl">Contact Us</Link>
+//           <Link href="/pharmacy" className="text-gray-700 hover:text-customBlue hover:underline text-2xl">Blog</Link>
+//           <Link href="/settings" className="text-gray-700 hover:text-customBlue hover:underline text-2xl">Legal Notice</Link>
 //         </div>
 //       )}
 
@@ -195,7 +195,7 @@ const Navbar = () => {
           {/* Left side - Logo */}
           <div className="flex-shrink-0">
             <Image
-              src="/hospital-logo.jpg" // Ensure this path is correct
+              src="/hospital-logo-og.png" // Ensure this path is correct
               alt="Hospital Logo"
               width={80}
               height={80}
@@ -204,16 +204,16 @@ const Navbar = () => {
 
           {/* Center - Links (desktop) */}
           <div className="hidden md:flex items-center space-x-7 mx-10">
-            <Link href="/dashboard" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Home</Link>
-            <Link href="/patients" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">About</Link>
-            <Link href="/doctors" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Services</Link>
-            <Link href="/appointments" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Doctors</Link>
-            <Link href="/billing" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Emergency Services</Link>
-            <Link href="/staff" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">News & Events</Link>
-            <Link href="/reports" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Careers</Link>
-            <Link href="/inventory" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Contact Us</Link>
-            <Link href="/pharmacy" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Blog</Link>
-            <Link href="/settings" className="text-gray-700 hover:text-blue-700 hover:underline font-bold text-lg">Legal Notice</Link>
+            <Link href="/dashboard" className="text-gray-700 no-underline hover:text-customBlue font-bold text-lg">Home</Link>
+            <Link href="/patients" className="text-gray-700 no-underline hover:text-customBlue font-bold text-lg">About</Link>
+            <Link href="/doctors" className="text-gray-700 no-underline hover:text-customBlue font-bold text-lg">Services</Link>
+            <Link href="/appointments" className="text-gray-700 no-underline hover:text-customBlue font-bold text-lg">Doctors</Link>
+            <Link href="/billing" className="text-gray-700 no-underline hover:text-customBlue font-bold text-lg">Emergency Services</Link>
+            <Link href="/staff" className="text-gray-700 no-underline hover:text-customBlue font-bold text-lg">News & Events</Link>
+            <Link href="/reports" className="text-gray-700 no-underline hover:text-customBlue font-bold text-lg">Careers</Link>
+            <Link href="/inventory" className="text-gray-700 no-underline hover:text-customBlue font-bold text-lg">Contact Us</Link>
+            <Link href="/pharmacy" className="text-gray-700 no-underline hover:text-customBlue font-bold text-lg">Blog</Link>
+            <Link href="/settings" className="text-gray-700 no-underline hover:text-customBlue font-bold text-lg">Legal Notice</Link>
           </div>
 
           {/* Emergency Contact Button (Desktop View) */}
@@ -286,16 +286,16 @@ const Navbar = () => {
           </button>
 
           {/* Menu items */}
-          <Link href="/dashboard" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Home</Link>
-          <Link href="/patients" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">About</Link>
-          <Link href="/doctors" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Services</Link>
-          <Link href="/appointments" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Doctors</Link>
-          <Link href="/billing" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Emergency Services</Link>
-          <Link href="/staff" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">News & Events</Link>
-          <Link href="/reports" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Careers</Link>
-          <Link href="/inventory" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Contact Us</Link>
-          <Link href="/pharmacy" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Blog</Link>
-          <Link href="/settings" className="text-gray-700 hover:text-blue-700 hover:underline text-2xl">Legal Notice</Link>
+          <Link href="/dashboard" className="text-gray-700 no-underline hover:text-customBlue text-2xl">Home</Link>
+          <Link href="/patients" className="text-gray-700 no-underline hover:text-customBlue text-2xl">About</Link>
+          <Link href="/doctors" className="text-gray-700 no-underline hover:text-customBlue text-2xl">Services</Link>
+          <Link href="/appointments" className="text-gray-700 no-underline hover:text-customBlue text-2xl">Doctors</Link>
+          <Link href="/billing" className="text-gray-700 no-underline hover:text-customBlue text-2xl">Emergency Services</Link>
+          <Link href="/staff" className="text-gray-700 no-underline hover:text-customBlue text-2xl">News & Events</Link>
+          <Link href="/reports" className="text-gray-700 no-underline hover:text-customBlue text-2xl">Careers</Link>
+          <Link href="/inventory" className="text-gray-700 no-underline hover:text-customBlue text-2xl">Contact Us</Link>
+          <Link href="/pharmacy" className="text-gray-700 no-underline hover:text-customBlue text-2xl">Blog</Link>
+          <Link href="/settings" className="text-gray-700 no-underline hover:text-customBlue text-2xl">Legal Notice</Link>
         </div>
       )}
 

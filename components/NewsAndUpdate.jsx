@@ -33,7 +33,7 @@ const NewsAndUpdate = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-blue-500 underline">Latest News & Updates</h2>
+          <h2 className="text-3xl font-bold text-customBlue">Latest News & Updates</h2>
           <p className="mt-3 text-lg text-gray-600">
             Stay updated with the latest news, events, and announcements from our hospital.
           </p>
@@ -59,7 +59,7 @@ const NewsAndUpdate = () => {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-blue-500">{news.title}</h3>
+                <h3 className="text-lg font-semibold text-customBlue">{news.title}</h3>
                 <div className="flex items-center text-gray-500 text-sm mt-2 mb-4">
                   <FaCalendarAlt className="mr-2" />
                   <span>{news.date}</span>
@@ -68,7 +68,7 @@ const NewsAndUpdate = () => {
                 
                 {/* Read more */}
                 <div className="mt-4">
-                  <a href="#" className="text-blue-600 hover:text-blue-800 flex items-center">
+                  <a href="#" className="text-customBlue hover:text-blue-800 flex items-center">
                     Read more <FaChevronRight className="ml-1" />
                   </a>
                 </div>
