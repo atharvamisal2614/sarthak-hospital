@@ -4,7 +4,7 @@ function Welcome() {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between p-6 mt-4 md:mt-8">
       {/* Welcome text above the image (for mobile view) */}
-      <h1 className="text-3xl font-bold text-customBlue underline text-center mb-4 md:hidden">
+      <h1 className="text-3xl font-bold text-blue-500 text-center mb-4 md:hidden">
         Welcome to Sarthak Hospital
       </h1>
 
@@ -22,11 +22,11 @@ function Welcome() {
       {/* Right side - Welcome text and description */}
       <div className="w-full md:w-1/2 mt-4 md:mt-0 md:ml-10">
         {/* Welcome text - hidden in mobile, shown in desktop */}
-        <h1 className="hidden md:block text-3xl font-bold text-customBlue">
+        <h1 className="hidden md:block text-3xl font-bold text-blue-500">
           Welcome to Sarthak Hospital
         </h1>
 
-        <p className="mt-4 text-customGreen text-lg leading-relaxed text-justify">
+        <p className="mt-4 text-customGreen text-[18px] leading-relaxed text-justify">
           Our hospital is committed to providing the highest standard of care and ensuring that
           our patients receive the best possible treatment. With state-of-the-art facilities, a
           highly qualified medical team, and compassionate staff, we are here to serve your needs.

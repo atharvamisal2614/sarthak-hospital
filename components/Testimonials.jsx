@@ -26,17 +26,18 @@ function Testimonials() {
 
   return (
     <div className=" py-12 px-6">
-      <h1 className="text-center text-3xl font-bold text-customBlue mb-8">Patient Testimonials</h1>
+      <h1 className="text-center text-3xl font-bold text-blue-500 mb-8 mt-16">Patient Testimonials</h1>
+      <div className="border-t-2 border-red-600 py-4 h-5 mx-auto md:w-1/12 w-1/4"></div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-5">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
             <div className="flex items-center justify-center mb-4">
-              <FaUserCircle size={60} className="text-customBlue" />
+              <FaUserCircle size={60} className="text-blue-500" />
             </div>
             <h3 className="text-xl font-bold text-center mb-2">{testimonial.name}</h3>
-            <p className="text-gray-600 text-center mb-4 italic">&quot;{testimonial.feedback}&quot;</p>
-            <p className="text-gray-400 text-center text-sm">{testimonial.date}</p>
+            <p className="text-green-800 text-center mb-4 italic">&quot;{testimonial.feedback}&quot;</p>
+            <p className="text-gray-500 text-center text-sm">{testimonial.date}</p>
           </div>
         ))}
       </div>

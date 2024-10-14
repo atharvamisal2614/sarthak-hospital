@@ -1,84 +1,61 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-const expertiseData = [
-  {
-    title: 'Brain Tumor',
-    description: 'Advanced imaging techniques allow for early detection and intervention in brain tumors, significantly improving patient outcomes.',
-    doctor: 'Dr. Aisha Khan',
-    experience: '10 years',
-    videoSrc: '/brain_tumor.mp4', // Ensure this is the correct path for your video
-  },
-  {
-    title: 'Cardiology',
-    description: 'Our cardiology department provides comprehensive care for heart conditions, including diagnostics, treatment, and prevention strategies.',
-    doctor: 'Dr. Vikram Singh',
-    experience: '15 years',
-    videoSrc: '/cardiology.mp4', // Ensure this is the correct path for your video
-  },
-  {
-    title: 'Orthopedics',
-    description: 'Specializing in musculoskeletal conditions, our orthopedic team uses advanced techniques for surgery and rehabilitation.',
-    doctor: 'Dr. Rajesh Patel',
-    experience: '12 years',
-    videoSrc: '/ortho.mp4', // Ensure this is the correct path for your video
-  },
-  {
-    title: 'Gastroenterology',
-    description: 'Our gastroenterology team offers diagnostics and treatment for digestive disorders, focusing on patient-centered care.',
-    doctor: 'Dr. Neha Sharma',
-    experience: '8 years',
-    videoSrc: '/gastro.mp4', // Ensure this is the correct path for your video
-  },
-  {
-    title: 'Oncology',
-    description: 'Expert oncologists provide comprehensive cancer care, offering support through treatment and survivorship and this is handled by our experts.',
-    doctor: 'Dr. Anil Gupta',
-    experience: '11 years',
-    videoSrc: '/oncology.mp4', // Ensure this is the correct path for your video
-  },
-  {
-    title: 'Neurology',
-    description: 'Our neurology department focuses on diagnosing and treating disorders of the nervous system, providing specialized care for each patient.',
-    doctor: 'Dr. Priya Verma',
-    experience: '14 years',
-    videoSrc: '/neurology.mp4', // Ensure this is the correct path for your video
-  },
-];
-
 const OurExpertise = () => {
+  const services = [
+    {
+      title: "Nephrologist Care",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero tempore expedita nihil iure quis magni ullam animi quaerat ratione? Rem aut blanditiis libero hic similique quod quis perferendis repellat.",
+      img: "https://demo2.themewarrior.com/hospitalplus/wp-content/uploads/sites/22/2016/04/Nephrologist-Care-280x215.jpg",
+      alt: "Nephrologist Care",
+      link: "https://demo2.themewarrior.com/hospitalplus/service/nephrologist-care/",
+    },
+    {
+      title: "Eye Care",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero tempore expedita nihil iure quis magni ullam animi quaerat ratione? Rem aut blanditiis libero hic similique quod quis perferendis repellat." ,
+      img: "https://demo2.themewarrior.com/hospitalplus/wp-content/uploads/sites/22/2016/04/Facility-Optic-280x215.jpg",
+      alt: "Eye Care",
+      link: "https://demo2.themewarrior.com/hospitalplus/service/eye-care/",
+    },
+    {
+      title: "Pediatrician Clinic",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero tempore expedita nihil iure quis magni ullam animi quaerat ratione? Rem aut blanditiis libero hic similique quod quis perferendis repellat.",
+      img: "https://demo2.themewarrior.com/hospitalplus/wp-content/uploads/sites/22/2016/02/Depositphotos_11882261_original-280x215.jpg",
+      alt: "Pediatrician Clinic",
+      link: "https://demo2.themewarrior.com/hospitalplus/service/pediatrician-clinic/",
+    },
+    {
+      title: "Prenatal Care",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero tempore expedita nihil iure quis magni ullam animi quaerat ratione? Rem aut blanditiis libero hic similique quod quis perferendis repellat.",
+      img: "https://demo2.themewarrior.com/hospitalplus/wp-content/uploads/sites/22/2016/04/prenatal-care-280x215.jpg",
+      alt: "Prenatal Care",
+      link: "https://demo2.themewarrior.com/hospitalplus/service/prenatal-care/",
+    },
+  ];
+
   return (
-    <div className="p-6">
-      <h2 className="text-3xl font-bold text-center text-customBlue mb-8">Our Expertise</h2>
-      <div className="row">
-        {expertiseData.map((expert, index) => (
-          <div className="col-md-6 mb-4" key={index}>
-            <div className="card h-100">
-              <video 
-                className="card-img-top" 
-                width="100%" 
-                height="300" 
-                controls 
-                autoPlay 
-                loop 
-                muted
-              >
-                <source src={expert.videoSrc} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="card-body">
-                <h5 className="card-title">{expert.title}</h5>
-                <p className="card-text">{expert.description}</p>
-                <p className="card-text">
-                  <strong>Expert: </strong>{expert.doctor} <br />
-                  <strong>Experience: </strong>{expert.experience}
-                </p>
+    <section className="py-12 mt-16">
+      <h3 className="text-3xl text-center text-blue-500 font-bold mb-8">Our Experties</h3>
+      <div className="border-t-2 border-red-600 py-4 h-5 mx-auto md:w-1/12 w-1/4"></div>
+      <div className="container mx-auto px-4 mt-5">
+        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10">
+          {services.map((service, index) => (
+            <div key={index} className="bg-gray-50 shadow-lg rounded-md overflow-hidden">
+              <a href={service.link}>
+                <img
+                  className="w-full h-48 object-cover sm:h-40 md:h-48 lg:h-52" // Responsive height adjustments
+                  src={service.img}
+                  alt={service.alt}
+                />
+              </a>
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-blue-500 mb-2 hover:text-red-500">
+                  <a href={service.link}>{service.title}</a>
+                </h3>
+                <p className="text-sm text-green-800">{service.description}</p>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

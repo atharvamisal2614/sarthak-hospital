@@ -1,67 +1,142 @@
 
-import React from 'react';
-import { Carousel } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-const teamData = [
-  {
-    name: 'Dr. Aisha Khan',
-    qualification: 'MBBS, MD',
-    specialty: 'General Medicine',
-    description: 'Dr. Aisha has over 10 years of experience in providing comprehensive primary care. She specializes in managing chronic diseases and believes in a holistic approach to health care, ensuring that her patients receive personalized attention and care.',
-    image: '/dr-1.png', // Replace with your image path
-  },
-  {
-    name: 'Dr. Rajesh Patel',
-    qualification: 'MBBS, MS',
-    specialty: 'Orthopedics',
-    description: 'With a specialization in bone and joint surgeries, Dr. Rajesh is dedicated to restoring mobility to his patients. His expertise in minimally invasive techniques helps to reduce recovery time, allowing patients to return to their daily activities quickly.',
-    image: '/doctor-2.png', // Replace with your image path
-  },
-  {
-    name: 'Dr. Neha Sharma',
-    qualification: 'MBBS, DNB',
-    specialty: 'Pediatrics',
-    description: 'Dr. Neha is passionate about providing the best care for children and has a gentle approach to treatments. With a focus on preventative care, she educates parents on healthy lifestyle choices for their children, ensuring a bright future for them.',
-    image: '/dr-neha.png', // Replace with your image path
-  },
-  {
-    name: 'Dr. Vikram Singh',
-    qualification: 'MBBS, MD',
-    specialty: 'Cardiology',
-    description: 'A specialist in heart health, Dr. Vikram provides advanced treatment options and patient-centered care. He emphasizes the importance of lifestyle changes alongside medical treatments to enhance his patients’ heart health and overall well-being.',
-    image: '/dr-3.png', // Replace with your image path
-  },
-];
 
-const Team = () => {
+import { FaFacebook, FaTwitter, FaGooglePlus, FaLinkedin } from "react-icons/fa";
+
+export default function Team() {
   return (
-    <div className="p-6 mt-24">
-      <h2 className="text-3xl font-bold text-center text-customBlue mb-8">Our Dedicated Team</h2>
-      <Carousel interval={3000} fade>
-        {teamData.map((doctor, index) => (
-          <Carousel.Item key={index}>
-            <div className="d-flex flex-column flex-md-row align-items-center">
-              <div className="w-100 w-md-50">
-                <img
-                  src={doctor.image}
-                  alt={doctor.name}
-                  className="d-block w-100"
-                  style={{ objectFit: 'cover', height: '650px' }} // Adjusted height for mobile view
-                />
-              </div>
-              <div className="w-100 w-md-50 p-4">
-                <h3 className="text-xl font-bold">{doctor.name}</h3>
-                <p className="text-gray-700">{doctor.qualification}</p>
-                <p className="text-gray-600">{doctor.specialty}</p>
-                <p>{doctor.description}</p>
-              </div>
-            </div>
-          </Carousel.Item>
-        ))}
-      </Carousel>
-    </div>
-  );
-};
+    <section id="doctor-widget" className="in_container px-4 py-8 mt-16">
+      {/* Heading and Description */}
+      <div className="text-center mb-8">
+        <h2 className="text-3xl font-bold text-blue-500">Our Doctors</h2>
 
-export default Team;
+        
+       
+      </div>
+      <div className="border-t-2 border-red-600 py-4 h-5 mx-auto md:w-1/12 w-1/4"></div>
+
+      {/* Doctor Profiles */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-5">
+        {/* Doctor 1 */}
+        <div className="bg-white shadow-md text-center py-3">
+          <div className="w-full h-64 mb-4">
+            <img
+              className="w-full h-full object-cover"
+              src="https://demo2.themewarrior.com/hospitalplus/wp-content/uploads/sites/22/2016/04/veronica-400x400.jpg"
+              alt="Doctor"
+            />
+          </div>
+          <h3 className="text-xl font-semibold mb-2 text-left mx-2  text-blue-500 hover:text-red-500">Dr. Veronica</h3>
+          <i><p className="text-green-800 text-left mx-2">Cardiologist</p></i>
+          <p className="text-gray-600 text-left mx-2 text-sm mb-4 mt-3">
+            Dr. Veronica is a well-experienced cardiologist who has performed over 500 successful surgeries.
+          </p>
+          <div className="flex justify-center space-x-4 mt-3">
+            <a href="#" className="text-blue-600 hover:text-blue-800">
+              <FaFacebook size={24} />
+            </a>
+            <a href="#" className="text-blue-400 hover:text-blue-600">
+              <FaTwitter size={24} />
+            </a>
+            <a href="#" className="text-red-600 hover:text-red-800">
+              <FaGooglePlus size={24} />
+            </a>
+            <a href="#" className="text-blue-700 hover:text-blue-900">
+              <FaLinkedin size={24} />
+            </a>
+          </div>
+        </div>
+
+        {/* Doctor 2 */}
+        <div className="bg-white shadow-md text-center py-3">
+          <div className="w-full h-64 mb-4">
+            <img
+              className="w-full h-full object-cover"
+              src="https://demo2.themewarrior.com/hospitalplus/wp-content/uploads/sites/22/2016/04/Dr-Kathirnia-400x400.jpg"
+              alt="Doctor"
+            />
+          </div>
+          <h3 className="text-xl font-semibold mb-2 text-left mx-2 text-blue-500 hover:text-red-500">Dr. Kathirnia</h3>
+         <i> <p className="text-green-800 text-left mx-2">Orthopedic Surgeon</p> </i>
+          <p className="text-gray-600 text-left mx-2 text-sm mb-4 mt-3">
+            Dr. Kathirnia has over 15 years of experience in orthopedic surgery with a high success rate.
+          </p>
+          <div className="flex justify-center space-x-4 mt-3">
+            <a href="#" className="text-blue-600 hover:text-blue-800">
+              <FaFacebook size={24} />
+            </a>
+            <a href="#" className="text-blue-400 hover:text-blue-600">
+              <FaTwitter size={24} />
+            </a>
+            <a href="#" className="text-red-600 hover:text-red-800">
+              <FaGooglePlus size={24} />
+            </a>
+            <a href="#" className="text-blue-700 hover:text-blue-900">
+              <FaLinkedin size={24} />
+            </a>
+          </div>
+        </div>
+
+        {/* Doctor 3 */}
+        <div className="bg-white shadow-md text-center py-3">
+          <div className="w-full h-64 mb-4">
+            <img
+              className="w-full h-full object-cover"
+              src="https://demo2.themewarrior.com/hospitalplus/wp-content/uploads/sites/22/2016/04/doctor-tahu-bulat-400x400.jpg"
+              alt="Doctor"
+            />
+          </div>
+          <h3 className="text-xl font-semibold mb-2 text-left mx-2 text-blue-500 hover:text-red-500">Dr. Tahu-bulat</h3>
+         <i> <p className="text-green-800 text-left mx-2">Neurologist</p> </i>
+          <p className="text-gray-600 text-left mx-2 text-sm mb-4 mt-3">
+            Dr. Tahu-bulat is an expert neurologist specializing in complex brain and spinal conditions.
+          </p>
+          <div className="flex justify-center space-x-4 mt-3">
+            <a href="#" className="text-blue-600 hover:text-blue-800">
+              <FaFacebook size={24} />
+            </a>
+            <a href="#" className="text-blue-400 hover:text-blue-600">
+              <FaTwitter size={24} />
+            </a>
+            <a href="#" className="text-red-600 hover:text-red-800">
+              <FaGooglePlus size={24} />
+            </a>
+            <a href="#" className="text-blue-700 hover:text-blue-900">
+              <FaLinkedin size={24} />
+            </a>
+          </div>
+        </div>
+
+        {/* Doctor 4 */}
+        <div className="bg-white shadow-md text-center py-3">
+          <div className="w-full h-64">
+            <img
+              className="w-full h-full object-cover"
+              src="https://demo2.themewarrior.com/hospitalplus/wp-content/uploads/sites/22/2016/04/pediactirc-Doctors-e1460536658595-400x400.jpg"
+              alt="Doctor"
+            />
+          </div>
+          <h3 className="text-xl font-semibold mb-2 text-left mx-2 text-blue-500 hover:text-red-500 mt-4">Dr. Alex Brown</h3>
+        <i>  <p className="text-green-800 text-left mx-2">Pediatrician</p> </i>
+          <p className="text-gray-600 text-left mx-2 text-sm mb-4 mt-3">
+            Dr. Alex has been a pediatrician for over a decade, known for his gentle care of children.
+          </p>
+          <div className="flex justify-center space-x-4 mt-3">
+            <a href="#" className="text-blue-600 hover:text-blue-800">
+              <FaFacebook size={24} />
+            </a>
+            <a href="#" className="text-blue-400 hover:text-blue-600">
+              <FaTwitter size={24} />
+            </a>
+            <a href="#" className="text-red-600 hover:text-red-800">
+              <FaGooglePlus size={24} />
+            </a>
+            <a href="#" className="text-blue-700 hover:text-blue-900">
+              <FaLinkedin size={24} />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

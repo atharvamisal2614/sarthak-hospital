@@ -9,8 +9,9 @@ import BookAppointmentForm from "@/components/BookAppointmentForm";
 import NewsAndUpdate from "@/components/NewsAndUpdate";
 import AtGlace from "@/components/AtGlance";
 import Team from "@/components/Team";
-import SkeleSkeletonSection from "@/components/SkeletonSection"
+
 import OurExpertise from "@/components/OurExperties";
+import HospitalDepartments from "@/components/HospitalDepartments";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,10 +34,11 @@ export default function Home() {
    <Services />
    <Team />
    <OurExpertise />
-   <SkeleSkeletonSection />
+  
    <Testimonials />
    <NewsAndUpdate />
    <BookAppointmentForm />
+ <HospitalDepartments />  
     </>
   );
 }
