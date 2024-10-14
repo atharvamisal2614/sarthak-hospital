@@ -73,14 +73,17 @@ const Navbar = () => {
                     strokeWidth="2"
                     d="M6 18L18 6M6 6l12 12"
                   />
-                ) : (
+                ) :
+                
+                 (
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M4 6h16M4 12h16m-7 6h7"
                   />
-                )}
+                )
+                }
               </svg>
             </button>
           </div>
@@ -89,13 +92,13 @@ const Navbar = () => {
 
       {/* Mobile Menu (fullscreen) */}
       {isOpen && (
-        <div className="fixed inset-0 z-30 bg-white flex flex-col items-center justify-center space-y-4 h-screen w-full">
+        <div className=" inset-0 z-30 bg-white flex flex-col items-center justify-center space-y-4 h-screen w-full sticky top-0">
           {/* Cross icon to close menu */}
           <button
             onClick={toggleMenu}
-            className="absolute top-5 right-5 text-gray-700 hover:text-gray-900 focus:outline-none"
+            // className="absolute top-5 right-5 text-gray-700 hover:text-gray-900 focus:outline-none"
           >
-            <svg
+            {/* <svg
               className="h-8 w-8"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -108,7 +111,7 @@ const Navbar = () => {
                 strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
               />
-            </svg>
+            </svg> */}
           </button>
 
           {/* Menu items */}
@@ -164,3 +167,11 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+
+
+
+
